@@ -22,6 +22,8 @@ export default NavBar;
 const styles={
   navBar:{
     padding: '1.04vw 2.6vw',
+    display: 'flex',
+    justifyContent: 'space-between',
   },
   navTitle:{
     gap:'0.52vw',
