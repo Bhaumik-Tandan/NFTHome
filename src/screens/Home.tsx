@@ -1,10 +1,10 @@
 import React from 'react'
 import NavBar from '../components/NavBar';
-import COLOR from '../contants/color';
+import COLOR from '../constants/color';
 
 function Home() {
   return (
-    <div style={styles.home}>
+    <div>
       <NavBar />
     </div>
   )
@@ -12,9 +12,4 @@ function Home() {
 
 export default Home;
 
-const styles={
-  home:{
-    display: 'flex',
-    height: '100vh'
-  }
-};
+

@@ -1,10 +1,9 @@
 import React from 'react'
-import COLOR from '../contants/color';
-
 function NavBar() {
   return (
     <div style={styles.navBar}>
       <div style={styles.navTitle}>
+        <img style={styles.navTitleImage} src={require('../assets/Storefront.png')} alt="logo" />
         <img style={styles.navTitleText} src={require('../assets/NFT Marketplace.png')} alt="logo" />
       </div>
     </div>
@@ -18,12 +17,20 @@ const styles={
     padding: '1.04vw 2.6vw',
   },
   navTitle:{
-    gap:'0.52vw'
+    gap:'0.52vw',
+    display: 'flex',
+    alignItems: 'center',
+
   },
   navTitleText:{
      width: '10.38vw',
       height: '1.03vw',
-      top: '0.45vw',
       left: '2.29vw',
+      display: 'flex',
+      alignItems: 'center',
+  },
+  navTitleImage:{
+    width:'2.96vh',
+    aspectRatio: '1'
   }
 };
