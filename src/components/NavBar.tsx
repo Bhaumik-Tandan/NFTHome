@@ -1,4 +1,6 @@
 import React from 'react'
+import NAV_ITEMS from '../constants/navItems';
+import NavItem from './NavItem';
 function NavBar() {
   return (
     <div style={styles.navBar}>
@@ -6,6 +8,11 @@ function NavBar() {
         <img style={styles.navTitleImage} src={require('../assets/Storefront.png')} alt="logo" />
         <img style={styles.navTitleText} src={require('../assets/NFT Marketplace.png')} alt="logo" />
       </div>
+      {
+        NAV_ITEMS.map((item, index) => (
+          <NavItem key={index} title={item.title} />
+        ))
+      }
     </div>
   )
 }
