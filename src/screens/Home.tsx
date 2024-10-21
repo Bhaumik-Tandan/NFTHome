@@ -15,9 +15,6 @@ export default Home;
 const styles={
   home:{
     display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-    backgroundColor: COLOR.BACKGROUND
+    height: '100vh'
   }
 };
