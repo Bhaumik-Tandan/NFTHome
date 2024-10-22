@@ -1,13 +1,12 @@
 import React from 'react'
 import NavBar from '../components/NavBar';
-import COLOR from '../constants/color';
-import NFTCard from '../components/NFTCard';
+import HeroSection from '../components/HeroSection';
 
 function Home() {
   return (
     <div>
       <NavBar />
-      <NFTCard />
+      <HeroSection />
     </div>
   )
 }
