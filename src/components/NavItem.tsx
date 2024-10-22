@@ -1,4 +1,6 @@
 import React from 'react'
+import COLOR from '../constants/color';
+
 
 export default function NavItem({title}:{title:string}) {
   return (
@@ -9,7 +11,8 @@ export default function NavItem({title}:{title:string}) {
 const styles = {
     title:{
         fontWeight: 600,
-        font: 'Work Sans',
+        fontFamily: "'Work Sans', sans-serif",
         fontSize: '1.04vw',
+        color:COLOR.TEXT_PRIMARY
     }
 };
