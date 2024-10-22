@@ -1,5 +1,5 @@
 import React from 'react';
-import COLOR from '../constants/color';
+import COLOR from '../constants/styles/color';
 import ButtonProps from 'types/props/ButtonProps';
 
 function Button({ title, icon }:ButtonProps) {
