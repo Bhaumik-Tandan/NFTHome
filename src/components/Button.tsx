@@ -1,7 +1,8 @@
 import React from 'react';
 import COLOR from '../constants/color';
+import ButtonProps from 'types/props/ButtonProps';
 
-function Button({ title, icon }) {
+function Button({ title, icon }:ButtonProps) {
   return (
     <div style={styles.button}>
       <img src={require(`../assets/${icon}.png`)} alt="icon" style={styles.icon} />
