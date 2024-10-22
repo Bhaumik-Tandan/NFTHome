@@ -1,12 +1,13 @@
 import React from 'react';
 import COLOR from 'constants/styles/color';
+import ImagePlaceHolder from 'assets/Image Placeholder.png';
 
 const NFTCard = () => {
   return (
     <div style={styles.card}>
       <div style={styles.imageContainer}>
         <img 
-          src={require("../assets/Image Placeholder.png")}
+          src={ImagePlaceHolder}
           alt="NFT" 
           style={styles.mainImage}
         />
@@ -37,7 +38,6 @@ const NFTCard = () => {
 
 const styles:any = {
   card: {
-    maxWidth: '320px',
     borderRadius: '12px',
     overflow: 'hidden',
     backgroundColor: COLOR.BACKGROUND_SECONDARY
@@ -47,8 +47,8 @@ const styles:any = {
     width: '100%'
   },
   mainImage: {
-    width: '100%',
-    height: '256px',
+    width: '510px',
+    height: '401px',
     objectFit: 'cover'
   },
   label: {

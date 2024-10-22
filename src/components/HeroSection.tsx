@@ -3,15 +3,24 @@ import NFTCard from "./NFTCard";
 import Button from "./Button";
 import HeroStats from "./HeroStats";
 import Text from "./Text";
+import { CSSProperties } from 'react';
 function HeroSection() {
   return (
     <div style={styles.container}>
       <div>
-        <Text>Discover digital art & Collect NFTs</Text>
-        <div>
+        <Text style={{
+          fontSize: "67px",
+          fontWeight: 600,
+        }}>
+          Discover digital art & Collect NFTs
+          </Text>
+        <Text style={{
+          fontSize: "22px",
+          fontWeight: 400,
+        }}>
           NFT marketplace UI created with Anima for Figma. Collect, buy and sell
           art from more than 20k NFT artists.
-        </div>
+        </Text>
         <Button title={"Get Started"} icon="RocketLaunch" />
         <HeroStats />
       </div>
@@ -22,7 +31,7 @@ function HeroSection() {
 
 export default HeroSection;
 
-const styles = {
+const styles :Record<string, CSSProperties>= {
   container: {
     padding: "5vw",
     display: "flex",

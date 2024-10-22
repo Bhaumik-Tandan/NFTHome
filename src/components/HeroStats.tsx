@@ -1,17 +1,17 @@
 import React from 'react'
 import heroData from 'constants/heroData';
-
+import Text from './Text';
 
 function HeroStats() {
   return (
-    <div>
+    <div style={styles.container}>
         {
             heroData.map((data, index) => {
                 return (
-                    <div key={index}>
+                    <Text key={index}>
                         <h1>{data.title}</h1>
                         <p>{data.value}</p>
-                    </div>
+                    </Text>
                 )
             }
             )
@@ -21,3 +21,11 @@ function HeroStats() {
 }
 
 export default HeroStats;
+
+const styles = {
+    container:{
+        display: "flex",
+        justifyContent: "space-between",
+        margin: "20px"
+    }
+};
