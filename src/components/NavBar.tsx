@@ -1,6 +1,7 @@
 import React from 'react'
 import NAV_ITEMS from '../constants/navItems';
 import NavItem from './NavItem';
+import Button from './Button';
 function NavBar() {
   return (
     <div style={styles.navBar}>
@@ -13,6 +14,7 @@ function NavBar() {
           <NavItem key={index} title={item.title} />
         ))
       }
+      <Button title="Sign Up" icon="User" />
     </div>
   )
 }
