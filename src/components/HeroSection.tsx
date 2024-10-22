@@ -5,7 +5,10 @@ import HeroStats from './HeroStats';
 
 function HeroSection() {
   return (
-    <div style={styles.container}>
+    <div style={{
+      display: 'flex',
+      flexDirection: 'row',
+  }}>
         <div>
             <div>
             Discover digital art & Collect NFTs
@@ -22,10 +25,3 @@ function HeroSection() {
 }
 
 export default HeroSection;
-
-const styles = {
-    container:{
-        display: 'flex',
-        flexDirection: 'row',
-    }
-};

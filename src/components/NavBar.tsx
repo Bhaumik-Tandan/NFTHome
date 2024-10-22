@@ -1,8 +1,8 @@
 import NAV_ITEMS from '../constants/navItems';
 import NavItem from './NavItem';
 import Button from './Button';
-import StorefrontLogo from '../assets/Storefront.png';
-import MarketplaceLogo from '../assets/NFT Marketplace.png';
+import StorefrontLogo from 'assets/Storefront.png';
+import MarketplaceLogo from 'assets/NFT Marketplace.png';
 function NavBar() {
   return (
     <div style={styles.navBar}>
