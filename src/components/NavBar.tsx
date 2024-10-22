@@ -1,13 +1,14 @@
-import React from 'react'
 import NAV_ITEMS from '../constants/navItems';
 import NavItem from './NavItem';
 import Button from './Button';
+import StorefrontLogo from '../assets/Storefront.png';
+import MarketplaceLogo from '../assets/NFT Marketplace.png';
 function NavBar() {
   return (
     <div style={styles.navBar}>
       <div style={styles.navTitle}>
-        <img style={styles.navTitleImage} src={require('../assets/Storefront.png')} alt="logo" />
-        <img style={styles.navTitleText} src={require('../assets/NFT Marketplace.png')} alt="logo" />
+        <img style={styles.navTitleImage} src={StorefrontLogo} alt="logo" />
+        <img style={styles.navTitleText} src={MarketplaceLogo} alt="logo" />
       </div>
       {
         NAV_ITEMS.map((item, index) => (

@@ -1,5 +1,5 @@
 import React from 'react'
-import heroData from '../constants/heroData';
+import heroData from 'constants/heroData';
 
 
 function HeroStats() {

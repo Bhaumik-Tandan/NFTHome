@@ -1,5 +1,5 @@
 import React from 'react';
-import COLOR from '../constants/color';
+import COLOR from 'constants/color';
 
 const NFTCard = () => {
   return (
