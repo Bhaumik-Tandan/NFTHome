@@ -1,6 +1,6 @@
 import NAV_ITEMS from '../constants/navItems';
-import NavItem from './NavItem';
-import Button from './Button';
+import NavItem from '../components/NavItem';
+import Button from '../components/Button';
 import StorefrontLogo from 'assets/Storefront.png';
 import MarketplaceLogo from 'assets/NFT Marketplace.png';
 function NavBar() {
