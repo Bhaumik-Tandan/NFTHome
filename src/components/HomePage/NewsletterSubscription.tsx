@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState,FormEvent } from 'react';
 import { Mail } from 'lucide-react';
 import ImagePlaceholder from 'assets/Image Placeholder.png';
+import Style from 'types/props/Style';
 const NewsletterSubscription = () => {
   const [email, setEmail] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle subscription logic here
     console.log('Subscribing email:', email);
@@ -51,7 +52,7 @@ const NewsletterSubscription = () => {
 
 export default NewsletterSubscription;
 
-const styles = {
+const styles:Style = {
   container: {
     width: '100%',
     padding: '20px',
@@ -62,10 +63,7 @@ const styles = {
     display: 'flex',
     backgroundColor: '#2B2B2B',
     borderRadius: '20px',
-    overflow: 'hidden',
-    '@media (max-width: 768px)': {
-      flexDirection: 'column',
-    },
+    overflow: 'hidden'
   },
   imageSection: {
     flex: '1',
@@ -88,30 +86,20 @@ const styles = {
     color: '#FFFFFF',
     fontSize: '38px',
     fontWeight: '600',
-    marginBottom: '10px',
-    '@media (max-width: 768px)': {
-      fontSize: '28px',
-    },
+    marginBottom: '10px'
   },
   subtitle: {
     color: '#FFFFFF',
     fontSize: '22px',
     marginBottom: '30px',
-    opacity: '0.8',
-    '@media (max-width: 768px)': {
-      fontSize: '16px',
-    },
+    opacity: '0.8'
   },
   form: {
     width: '100%',
   },
   inputWrapper: {
     position: 'relative',
-    display: 'flex',
-    '@media (max-width: 480px)': {
-      flexDirection: 'column',
-      gap: '16px',
-    },
+    display: 'flex'
   },
   input: {
     flex: '1',
@@ -121,10 +109,7 @@ const styles = {
     border: 'none',
     borderRadius: '20px',
     marginRight: '-100px',
-    zIndex: 1,
-    '@media (max-width: 480px)': {
-      marginRight: 0,
-    },
+    zIndex: 1
   },
   button: {
     display: 'flex',
@@ -139,10 +124,7 @@ const styles = {
     fontWeight: '600',
     cursor: 'pointer',
     transition: 'background-color 0.2s ease',
-    zIndex: 2,
-    ':hover': {
-      backgroundColor: '#8247E5',
-    },
+    zIndex: 2
   },
   icon: {
     marginRight: '12px',

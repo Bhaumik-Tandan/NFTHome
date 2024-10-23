@@ -1,7 +1,10 @@
 import React from 'react';
 import ImagePlaceHolder from "assets/Image Placeholder.png";
 import Avatar from "assets/Avatar.png";
-const NFTCard = ({ title, artist, price, highestBid }) => {
+import Style from 'types/props/Style';
+const NFTCard = ({ title, artist, price, highestBid }:{
+  title:string, artist:string, price:string, highestBid:string
+}) => {
   return (
     <div style={styles.cardContainer}>
       <div style={styles.imageContainer}>
@@ -80,7 +83,7 @@ const NFTCollection = () => {
 
 export default NFTCollection;
 
-const styles = {
+const styles:Style = {
   collectionWrapper: {
     maxWidth: '1200px',
     margin: '0 auto',
@@ -89,22 +92,13 @@ const styles = {
   collectionGrid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
-    gap: '24px',
-    '@media (max-width: 1024px)': {
-      gridTemplateColumns: 'repeat(2, 1fr)'
-    },
-    '@media (max-width: 768px)': {
-      gridTemplateColumns: '1fr'
-    }
+    gap: '24px'
   },
   cardContainer: {
     backgroundColor: '#2B2B2B',
     borderRadius: '20px',
     overflow: 'hidden',
-    transition: 'transform 0.2s ease-in-out',
-    ':hover': {
-      transform: 'translateY(-5px)'
-    }
+    transition: 'transform 0.2s ease-in-out'
   },
   imageContainer: {
     position: 'relative',

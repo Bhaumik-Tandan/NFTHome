@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Eye } from 'lucide-react';
 import Avatar from "assets/Avatar.png";
 import StoreFront from "assets/Storefront.png";
-const CountdownTimer = ({ hours, minutes, seconds }) => {
+import Style from 'types/props/Style';
+const CountdownTimer = ({ hours, minutes, seconds }:{
+  hours:number,
+  minutes:number,
+  seconds:number
+}) => {
   return (
     <div style={styles.timerContainer}>
       <p style={styles.timerLabel}>Auction ends in:</p>
@@ -100,7 +105,7 @@ const NFTBanner = () => {
 
 export default NFTBanner;
 
-const styles = {
+const styles:Style = {
   container: {
     position: 'relative',
     width: '100%',

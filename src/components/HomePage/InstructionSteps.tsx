@@ -1,7 +1,10 @@
 import React from 'react';
 import { Wallet, FolderUp, ShoppingCart } from 'lucide-react';
+import Style from 'types/props/Style';
 
-const InstructionCard = ({ icon: Icon, title, description }) => {
+const InstructionCard = ({ icon: Icon, title, description }:{
+  icon:any, title:string, description:string
+}) => {
   return (
     <div style={styles.card}>
       <div style={styles.iconWrapper}>
@@ -63,7 +66,7 @@ const InstructionSteps = () => {
 
 export default InstructionSteps;
 
-const styles = {
+const styles:Style = {
   container: {
     maxWidth: '1200px',
     margin: '0 auto',
@@ -72,13 +75,7 @@ const styles = {
   grid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
-    gap: '30px',
-    '@media (max-width: 1024px)': {
-      gridTemplateColumns: 'repeat(2, 1fr)',
-    },
-    '@media (max-width: 768px)': {
-      gridTemplateColumns: '1fr',
-    }
+    gap: '30px'
   },
   card: {
     backgroundColor: '#2B2B2B',

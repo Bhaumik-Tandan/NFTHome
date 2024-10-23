@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, FormEvent } from 'react'; // Add FormEvent import
 import { Store, Mail } from 'lucide-react';
 import ImagePlaceHolder from 'assets/Image Placeholder.png';
 import Style from 'types/props/Style';
 const Footer = () => {
   const [email, setEmail] = useState('');
 
-  const handleSubscribe = (e:Event) => {
+  const handleSubscribe = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log('Subscribe:', email);
   };
@@ -106,13 +106,7 @@ const styles:Style = {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
     gap: '30px',
-    marginBottom: '30px',
-    '@media (max-width: 1024px)': {
-      gridTemplateColumns: 'repeat(2, 1fr)',
-    },
-    '@media (max-width: 768px)': {
-      gridTemplateColumns: '1fr',
-    },
+    marginBottom: '30px'
   },
   column: {
     display: 'flex',
@@ -156,10 +150,7 @@ const styles:Style = {
     justifyContent: 'center',
     borderRadius: '50%',
     backgroundColor: '#3B3B3B',
-    transition: 'background-color 0.2s ease',
-    ':hover': {
-      backgroundColor: '#A259FF',
-    },
+    transition: 'background-color 0.2s ease'
   },
   columnTitle: {
     fontSize: '22px',
@@ -174,10 +165,7 @@ const styles:Style = {
   navLink: {
     color: '#CCCCCC',
     textDecoration: 'none',
-    transition: 'color 0.2s ease',
-    ':hover': {
-      color: '#A259FF',
-    },
+    transition: 'color 0.2s ease'
   },
   subscribeForm: {
     width: '100%',
@@ -185,10 +173,9 @@ const styles:Style = {
   inputWrapper: {
     position: 'relative',
     display: 'flex',
-    '@media (max-width: 480px)': {
       flexDirection: 'column',
       gap: '16px',
-    },
+    
   },
   input: {
     flex: '1',
@@ -197,10 +184,7 @@ const styles:Style = {
     backgroundColor: '#FFFFFF',
     border: 'none',
     borderRadius: '20px',
-    marginRight: '-100px',
-    '@media (max-width: 480px)': {
-      marginRight: 0,
-    },
+    marginRight: '-100px'
   },
   button: {
     display: 'flex',
@@ -215,10 +199,7 @@ const styles:Style = {
     fontWeight: '600',
     cursor: 'pointer',
     transition: 'background-color 0.2s ease',
-    zIndex: 1,
-    ':hover': {
-      backgroundColor: '#8247E5',
-    },
+    zIndex: 1
   },
   buttonIcon: {
     marginRight: '12px',
