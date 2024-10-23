@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Store, Mail } from 'lucide-react';
 import ImagePlaceHolder from 'assets/Image Placeholder.png';
+import Style from 'types/props/Style';
 const Footer = () => {
   const [email, setEmail] = useState('');
 
-  const handleSubscribe = (e) => {
+  const handleSubscribe = (e:Event) => {
     e.preventDefault();
     console.log('Subscribe:', email);
   };
@@ -90,7 +91,7 @@ const Footer = () => {
 
 export default Footer;
 
-const styles = {
+const styles:Style = {
   footer: {
     backgroundColor: '#2B2B2B',
     padding: '40px 0',

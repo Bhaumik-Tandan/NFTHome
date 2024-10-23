@@ -2,7 +2,10 @@ import React from 'react';
 import { Palette, Layers, Music, Camera, Video, Wand2} from 'lucide-react';
 import ImagePlaceHolder from "assets/Image Placeholder.png";
 import Text from 'components/Text';
-const CategoryCard = ({ title, icon: Icon, backgroundImage }) => {
+import Style from 'types/props/Style';
+const CategoryCard = ({ title, icon: Icon, backgroundImage }:{
+  title:string, icon:any, backgroundImage?:string
+}) => {
   return (
     <div style={styles.cardContainer}>
       <div style={styles.imageOverlay}>
@@ -52,7 +55,7 @@ const CategoryGrid = () => {
 
 export default CategoryGrid;
 
-const styles = {
+const styles:Style = {
   gridWrapper: {
     maxWidth: '1200px',
     margin: '0 auto',
@@ -61,16 +64,7 @@ const styles = {
   grid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(4, 1fr)',
-    gap: '24px',
-    '@media (max-width: 1200px)': {
-      gridTemplateColumns: 'repeat(3, 1fr)'
-    },
-    '@media (max-width: 900px)': {
-      gridTemplateColumns: 'repeat(2, 1fr)'
-    },
-    '@media (max-width: 600px)': {
-      gridTemplateColumns: 'repeat(1, 1fr)'
-    }
+    gap: '24px'
   },
   cardContainer: {
     backgroundColor: '#1E1E1E',
@@ -78,10 +72,7 @@ const styles = {
     overflow: 'hidden',
     position: 'relative',
     cursor: 'pointer',
-    transition: 'transform 0.2s ease-in-out',
-    ':hover': {
-      transform: 'translateY(-5px)'
-    }
+    transition: 'transform 0.2s ease-in-out'
   },
   imageOverlay: {
     position: 'relative',

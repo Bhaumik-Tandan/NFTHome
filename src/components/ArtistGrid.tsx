@@ -1,6 +1,7 @@
 import React from 'react';
 import ImagePlaceHolder from "assets/Image Placeholder.png";
-const ArtistCard = ({ rank, username, sales }) => {
+import Style from 'types/props/Style';
+const ArtistCard = ({ rank, username, sales }:{rank:number,username:string,sales:string}) => {
   return (
     <div style={styles.container}>
       <div style={styles.rankContainer}>
@@ -61,7 +62,7 @@ const ArtistGrid = () => {
 
 export default ArtistGrid;
 
-const styles = {
+const styles:Style = {
   // Grid Container Styles
   gridWrapper: {
     maxWidth: '1200px',
@@ -71,16 +72,7 @@ const styles = {
   grid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(4, 1fr)',
-    gap: '24px',
-    '@media (max-width: 1200px)': {
-      gridTemplateColumns: 'repeat(3, 1fr)'
-    },
-    '@media (max-width: 900px)': {
-      gridTemplateColumns: 'repeat(2, 1fr)'
-    },
-    '@media (max-width: 600px)': {
-      gridTemplateColumns: 'repeat(1, 1fr)'
-    }
+    gap: '24px'
   },
   
   // Artist Card Styles
