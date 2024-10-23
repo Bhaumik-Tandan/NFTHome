@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NFTHome/static/css/main.0d1ce8e2.css",
+    "main.js": "/NFTHome/static/js/main.6e0ed020.js",
+    "static/media/Avatar.png": "/NFTHome/static/media/Avatar.2c23fd4c3f3cac0bed4e.png",
+    "static/media/Image Placeholder.png": "/NFTHome/static/media/Image Placeholder.aefccd3ce29269067f7f.png",
+    "index.html": "/NFTHome/index.html",
+    "main.0d1ce8e2.css.map": "/NFTHome/static/css/main.0d1ce8e2.css.map",
+    "main.6e0ed020.js.map": "/NFTHome/static/js/main.6e0ed020.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d1ce8e2.css",
+    "static/js/main.6e0ed020.js"
+  ]
+}
