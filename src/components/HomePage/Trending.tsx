@@ -1,9 +1,9 @@
 import React from 'react'
-import Text from '../components/Text'
+import Text from '../Text'
 import Style from 'types/props/Style';
-import Button from '../components/Button';
-import ArtistCard from '../components/ArtistCard';
-import ArtistGrid from '../components/ArtistGrid';
+import Button from '../Button';
+import ArtistCard from '../ArtistCard';
+import ArtistGrid from '../ArtistGrid';
 function Trending() {
   return (
     <div style={styles.container}>

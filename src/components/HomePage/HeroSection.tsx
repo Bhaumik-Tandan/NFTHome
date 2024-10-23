@@ -1,8 +1,8 @@
 import React from "react";
-import NFTCard from "../components/NFTCard";
-import Button from "../components/Button";
-import HeroStats from "../components/HeroStats";
-import Text from "../components/Text";
+import NFTCard from "../NFTCard";
+import Button from "../Button";
+import HeroStats from "../HeroStats";
+import Text from "../Text";
 import { CSSProperties } from 'react';
 function HeroSection() {
   return (

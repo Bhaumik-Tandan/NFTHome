@@ -1,6 +1,6 @@
-import NAV_ITEMS from '../constants/navItems';
-import NavItem from '../components/NavItem';
-import Button from '../components/Button';
+import NAV_ITEMS from '../../constants/navItems';
+import NavItem from '../NavItem';
+import Button from '../Button';
 import StorefrontLogo from 'assets/Storefront.png';
 import MarketplaceLogo from 'assets/NFT Marketplace.png';
 function NavBar() {
@@ -10,12 +10,19 @@ function NavBar() {
         <img style={styles.navTitleImage} src={StorefrontLogo} alt="logo" />
         <img style={styles.navTitleText} src={MarketplaceLogo} alt="logo" />
       </div>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        gap: '5vw',
+
+      }}>
       {
         NAV_ITEMS.map((item, index) => (
           <NavItem key={index} title={item.title} />
         ))
       }
       <Button title="Sign Up" icon="User" />
+      </div>
     </div>
   )
 }
