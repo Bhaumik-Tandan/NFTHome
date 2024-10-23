@@ -2,7 +2,10 @@ import React from 'react';
 import { User } from 'lucide-react';
 import Text from 'components/Text';
 import ImagePlaceHolder from 'assets/Image Placeholder.png';
-const CollectionCard = ({ mainImage, thumbnails, title, creator }) => {
+import Style from 'types/props/Style';
+const CollectionCard = ({ mainImage, thumbnails, title, creator }:
+    { mainImage: string, thumbnails: string[], title: string, creator: string }
+) => {
   return (
     <div style={styles.card}>
       <div style={styles.mainImage}>
@@ -95,7 +98,7 @@ const TrendingCollection = () => {
   );
 };
 
-const styles = {
+const styles: Style = {
   container: {
     width: '100%',
     padding: '80px 0'
@@ -138,10 +141,7 @@ const styles = {
     width: '100%',
     height: '100%',
     objectFit: 'cover',
-    transition: 'transform 0.3s ease',
-    ':hover': {
-      transform: 'scale(1.05)'
-    }
+    transition: 'transform 0.3s ease'
   },
   thumbnailGrid: {
     display: 'grid',
